@@ -114,10 +114,6 @@ module Ohm
         end
       end
 
-      def [](index)
-        model[key[index]]
-      end
-
       def sort(*args)
         key.sort(*args).map(&model)
       end
