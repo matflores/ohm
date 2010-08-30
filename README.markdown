@@ -218,8 +218,7 @@ Ohm lets you declare `references` and `collections` to represent associations.
     end
 
 After this, every time you refer to `post.comments` you will be talking
-about instances of the model `Comment`. If you want to get a list of IDs
-you can use `post.comments.raw`.
+about instances of the model `Comment`.
 
 Indexes
 -------
