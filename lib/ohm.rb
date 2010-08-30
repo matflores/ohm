@@ -928,18 +928,6 @@ module Ohm
       end
     end
 
-    def read_locals(attrs)
-      attrs.map do |att|
-        send(att)
-      end
-    end
-
-    def read_remotes(attrs)
-      attrs.map do |att|
-        read_remote(att)
-      end
-    end
-
     def self.index_key_for(att, value)
       raise IndexNotFound, att unless indices.include?(att)
       key[att][encode(value)]
